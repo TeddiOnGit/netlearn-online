@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Logo from "@/components/Logo";
 import LogoMark from "@/components/LogoMark";
 
 export default function Home() {
@@ -25,14 +24,6 @@ export default function Home() {
               learning resources, mentorship and digital access to the learners
               who need it most — building a foundation for lifelong opportunity.
             </p>
-            <div className="hero-actions">
-              <a href="#donate" className="btn btn-primary">
-                Support Our Mission
-              </a>
-              <a href="#programs" className="btn btn-ghost">
-                Explore Programs
-              </a>
-            </div>
             <div className="hero-stats">
               <div>
                 <div className="num text-grad">12,400+</div>
@@ -50,22 +41,25 @@ export default function Home() {
           </div>
 
           <div className="hero-visual">
-            <div className="hero-card">
-              <div className="logo-stage">
-                <Logo variant="light" />
-              </div>
+            <div className="hero-photo">
+              <img
+                src="/images/hero.jpg"
+                alt="Students learning together in a classroom"
+              />
               <div className="float float-1">
-                <span className="ic">🎓</span>
-                <div>
-                  Curriculum Support
-                  <small>Free study resources</small>
-                </div>
-              </div>
-              <div className="float float-2">
-                <span className="ic">✓</span>
+                <span className="ic">
+                  <LogoMark className="mini-mark" />
+                </span>
                 <div>
                   Verified NPO
                   <small>302-957</small>
+                </div>
+              </div>
+              <div className="float float-2">
+                <span className="ic">🎓</span>
+                <div>
+                  12,400+ learners
+                  <small>and counting</small>
                 </div>
               </div>
             </div>
@@ -87,28 +81,44 @@ export default function Home() {
           </div>
           <div className="cards-3">
             <article className="card">
-              <div className="ic">📚</div>
-              <h3>Learning Resources</h3>
-              <p>
-                Free study guides, e-learning content and exam preparation
-                materials, accessible to every learner regardless of background.
-              </p>
+              <div className="card-photo">
+                <img src="/images/resources.jpg" alt="Books and learning materials" />
+              </div>
+              <div className="card-body">
+                <div className="ic">📚</div>
+                <h3>Learning Resources</h3>
+                <p>
+                  Free study guides, e-learning content and exam preparation
+                  materials, accessible to every learner regardless of
+                  background.
+                </p>
+              </div>
             </article>
             <article className="card">
-              <div className="ic">🤝</div>
-              <h3>Mentorship Network</h3>
-              <p>
-                Connecting students with mentors and tutors who provide
-                guidance, encouragement and academic support all year round.
-              </p>
+              <div className="card-photo">
+                <img src="/images/mentorship.jpg" alt="A teacher with a class of students" />
+              </div>
+              <div className="card-body">
+                <div className="ic">🤝</div>
+                <h3>Mentorship Network</h3>
+                <p>
+                  Connecting students with mentors and tutors who provide
+                  guidance, encouragement and academic support all year round.
+                </p>
+              </div>
             </article>
             <article className="card">
-              <div className="ic">💻</div>
-              <h3>Digital Access</h3>
-              <p>
-                Bridging the digital divide by equipping learning centres with
-                devices, connectivity and digital-literacy training.
-              </p>
+              <div className="card-photo">
+                <img src="/images/digital.jpg" alt="A learner using a laptop with headphones" />
+              </div>
+              <div className="card-body">
+                <div className="ic">💻</div>
+                <h3>Digital Access</h3>
+                <p>
+                  Bridging the digital divide by equipping learning centres with
+                  devices, connectivity and digital-literacy training.
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -167,6 +177,10 @@ export default function Home() {
       {/* ---------------- Impact ---------------- */}
       <section className="impact" id="impact">
         <div className="container">
+          <div className="head">
+            <span className="tag">Our impact</span>
+            <h2>Measurable change, year after year</h2>
+          </div>
           <div className="impact-band">
             <div>
               <div className="num">12,400+</div>
@@ -188,82 +202,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------- Donate ---------------- */}
-      <section className="donate" id="donate">
-        <div className="container">
-          <div className="donate-box">
-            <div>
-              <h2>Your support changes a learner&apos;s story</h2>
-              <p>
-                As a registered non-profit (NPO 302-957), every donation is
-                reinvested directly into education programs, resources and
-                mentorship for the communities we serve.
-              </p>
-            </div>
-            <div className="donate-actions">
-              <a href="#contact" className="btn btn-primary">
-                Make a Donation
-              </a>
-              <a href="#contact" className="btn btn-ghost">
-                Become a Partner
-              </a>
-              <p className="npo-note">
-                Netlearn · Registered Non-Profit Organisation · NPO 302-957
-              </p>
-            </div>
+      {/* ---------------- Mission (split) ---------------- */}
+      <section className="mission" id="mission">
+        <div className="container split">
+          <div className="split-photo">
+            <img src="/images/mission.jpg" alt="Students collaborating over a laptop" />
+          </div>
+          <div className="split-text">
+            <span className="tag">Our mission</span>
+            <h2>Every learner deserves the chance to thrive</h2>
+            <p>
+              As a registered non-profit organisation, Netlearn exists to make
+              quality education accessible to all. We invest directly into
+              programmes, resources and mentorship — meeting learners where they
+              are and walking with them toward their potential.
+            </p>
+            <ul className="ticks">
+              <li>Resources that reach under-served communities</li>
+              <li>Mentors who stay through the whole journey</li>
+              <li>Transparent stewardship — 97% straight to programmes</li>
+            </ul>
           </div>
         </div>
       </section>
 
       {/* ---------------- Contact ---------------- */}
       <section className="contact" id="contact">
-        <div className="container contact-grid">
-          <div className="contact-info">
+        <div className="container">
+          <div className="head">
             <span className="tag">Get in touch</span>
             <h2>We&apos;d love to hear from you</h2>
             <p>
               Whether you&apos;re a school, donor, volunteer or learner — reach
               out and let&apos;s expand access to education together.
             </p>
-            <ul className="contact-list">
-              <li>
-                <span className="ic">✉</span> hello@netlearn.online
-              </li>
-              <li>
-                <span className="ic">☎</span> +27 00 000 0000
-              </li>
-              <li>
-                <span className="ic">📍</span> South Africa
-              </li>
-            </ul>
           </div>
-          <form>
-            <div className="field">
-              <label htmlFor="name">Full Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" />
+          <div className="contact-cards">
+            <div className="contact-card">
+              <span className="ic">✉</span>
+              <h4>Email</h4>
+              <p>hello@netlearn.online</p>
             </div>
-            <div className="field">
-              <label htmlFor="email">Email Address</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-              />
+            <div className="contact-card">
+              <span className="ic">☎</span>
+              <h4>Phone</h4>
+              <p>+27 00 000 0000</p>
             </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                placeholder="How can we help?"
-              />
+            <div className="contact-card">
+              <span className="ic">📍</span>
+              <h4>Location</h4>
+              <p>South Africa</p>
             </div>
-            <button type="submit" className="btn btn-primary">
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </section>
 
@@ -285,12 +275,12 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h4>Quick Links</h4>
+              <h4>Explore</h4>
               <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#programs">Programs</a></li>
                 <li><a href="#impact">Our Impact</a></li>
-                <li><a href="#donate">Donate</a></li>
+                <li><a href="#mission">Mission</a></li>
               </ul>
             </div>
             <div>

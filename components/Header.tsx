@@ -7,6 +7,7 @@ const LINKS = [
   { href: "#about", label: "About" },
   { href: "#programs", label: "Programs" },
   { href: "#impact", label: "Impact" },
+  { href: "#mission", label: "Mission" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -39,15 +40,6 @@ export default function Header() {
           ))}
         </ul>
 
-        <div className="nav-right">
-          <a href="#donate" className="btn btn-outline btn-text">
-            Donate
-          </a>
-          <a href="#contact" className="btn btn-primary">
-            Get Involved
-          </a>
-        </div>
-
         <button
           className="menu-toggle"
           aria-label="Toggle menu"
@@ -68,22 +60,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="mobile-actions">
-          <a
-            href="#donate"
-            className="btn btn-outline"
-            onClick={() => setOpen(false)}
-          >
-            Donate
-          </a>
-          <a
-            href="#contact"
-            className="btn btn-primary"
-            onClick={() => setOpen(false)}
-          >
-            Get Involved
-          </a>
-        </div>
       </div>
     </header>
   );
