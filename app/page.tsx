@@ -137,38 +137,45 @@ export default function Home() {
               support is relevant, sustainable and measurable.
             </p>
           </div>
-          <div className="cards-4">
+          <div className="cards-3">
             <article className="pcard">
-              <div className="num">01</div>
-              <h3>After-School Tutoring</h3>
-              <p>
-                Structured sessions in core subjects, helping learners build
-                confidence and close knowledge gaps.
-              </p>
+              <div className="pcard-photo">
+                <img src="/images/exam.jpg" alt="Students preparing for an exam" />
+              </div>
+              <div className="pcard-body">
+                <div className="num">01</div>
+                <h3>Exam Preparation</h3>
+                <p>
+                  Focused revision, past-paper practice and study strategies
+                  that help learners walk into exams ready and confident.
+                </p>
+              </div>
             </article>
             <article className="pcard">
-              <div className="num">02</div>
-              <h3>Scholarship Fund</h3>
-              <p>
-                Support covering school fees, uniforms and materials for
-                promising students in need.
-              </p>
+              <div className="pcard-photo">
+                <img src="/images/weekly.jpg" alt="Two students learning together" />
+              </div>
+              <div className="pcard-body">
+                <div className="num">02</div>
+                <h3>Weekly Classes</h3>
+                <p>
+                  Regular, structured sessions in core subjects that build
+                  understanding steadily and keep learners on track all term.
+                </p>
+              </div>
             </article>
             <article className="pcard">
-              <div className="num">03</div>
-              <h3>Teacher Training</h3>
-              <p>
-                Workshops equipping educators with modern teaching methods and
-                digital resources.
-              </p>
-            </article>
-            <article className="pcard">
-              <div className="num">04</div>
-              <h3>Community Libraries</h3>
-              <p>
-                Establishing and stocking reading spaces that nurture a lifelong
-                love of learning.
-              </p>
+              <div className="pcard-photo">
+                <img src="/images/workshop.jpg" alt="Students in a development workshop" />
+              </div>
+              <div className="pcard-body">
+                <div className="num">03</div>
+                <h3>Development Workshops</h3>
+                <p>
+                  Hands-on workshops growing digital, study and life skills that
+                  prepare learners for opportunities beyond the classroom.
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -246,7 +253,7 @@ export default function Home() {
             <div className="contact-card">
               <span className="ic">☎</span>
               <h4>Phone</h4>
-              <p>+27 00 000 0000</p>
+              <p>+27 81 771 8643</p>
             </div>
             <div className="contact-card">
               <span className="ic">📍</span>
@@ -287,7 +294,7 @@ export default function Home() {
               <h4>Contact</h4>
               <ul>
                 <li>hello@netlearn.online</li>
-                <li>+27 00 000 0000</li>
+                <li>+27 81 771 8643</li>
                 <li>South Africa</li>
               </ul>
             </div>
