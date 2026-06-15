@@ -82,7 +82,7 @@ export default function Home() {
           <div className="cards-3">
             <article className="card">
               <div className="card-photo">
-                <img src="/images/resources.jpg" alt="Books and learning materials" />
+                <img src="/images/resources.jpg" alt="A learner studying with notebooks and study tools" />
               </div>
               <div className="card-body">
                 <div className="ic">📚</div>
@@ -96,7 +96,7 @@ export default function Home() {
             </article>
             <article className="card">
               <div className="card-photo">
-                <img src="/images/mentorship.jpg" alt="A teacher with a class of students" />
+                <img src="/images/mentorship.jpg" alt="Two students learning together at a desk" />
               </div>
               <div className="card-body">
                 <div className="ic">🤝</div>
@@ -109,7 +109,7 @@ export default function Home() {
             </article>
             <article className="card">
               <div className="card-photo">
-                <img src="/images/digital.jpg" alt="A learner using a laptop with headphones" />
+                <img src="/images/digital.jpg" alt="Learners using a digital device in class" />
               </div>
               <div className="card-body">
                 <div className="ic">💻</div>

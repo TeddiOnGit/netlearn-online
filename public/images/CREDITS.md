@@ -7,9 +7,9 @@ required). Source photo IDs:
 | File            | Source / photographer            |
 | --------------- | -------------------------------- |
 | hero.jpg        | photo-1571260899304-425eee4c7efc |
-| resources.jpg   | photo-1503676260728-1c00da094a0b |
-| mentorship.jpg  | photo-1577896851231-70ef18881754 |
-| digital.jpg     | photo-1610484826967-09c5720778c7 |
+| resources.jpg   | David Geneugelijk (Unsplash)     |
+| mentorship.jpg  | Zach Wear (Unsplash)             |
+| digital.jpg     | Gnim Zabdiel Mignake (Unsplash)  |
 | mission.jpg     | photo-1522202176988-66273c2fd55f |
 | exam.jpg        | S. Hossein Hassanpour (Unsplash) |
 | weekly.jpg      | Ishakah Rumbani (Unsplash)       |
