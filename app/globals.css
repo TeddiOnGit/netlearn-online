@@ -76,6 +76,7 @@ a {
   font-size: 0.95rem;
   border: 1px solid transparent;
   cursor: pointer;
+  white-space: nowrap;
   transition: transform 0.22s ease, box-shadow 0.22s ease,
     background 0.22s ease, border-color 0.22s ease;
 }
@@ -139,6 +140,7 @@ a {
   display: flex;
   align-items: center;
   gap: 11px;
+  flex: 1;
 }
 .brand .mark {
   width: 40px;
@@ -181,11 +183,105 @@ a {
 .nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 16px;
+  flex: 1;
 }
 
 .header:not(.scrolled) .name {
   color: #fff;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header.scrolled .menu-toggle {
+  border-color: var(--line);
+  background: #fff;
+}
+.burger {
+  position: relative;
+}
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.header.scrolled .burger,
+.header.scrolled .burger::before,
+.header.scrolled .burger::after {
+  background: var(--navy);
+}
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+}
+.burger::before {
+  transform: translateY(-6px);
+}
+.burger::after {
+  transform: translateY(6px);
+}
+.burger.is-open {
+  background: transparent;
+}
+.burger.is-open::before {
+  transform: translateY(0) rotate(45deg);
+}
+.burger.is-open::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* Mobile dropdown */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 24px;
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid transparent;
+  transition: max-height 0.32s ease, padding 0.32s ease;
+}
+.mobile-menu.open {
+  max-height: 420px;
+  padding: 10px 24px 22px;
+  border-bottom-color: var(--line);
+}
+.mobile-menu ul {
+  list-style: none;
+}
+.mobile-menu ul li a {
+  display: block;
+  padding: 13px 4px;
+  font-weight: 600;
+  color: var(--navy);
+  border-bottom: 1px solid var(--line);
+}
+.mobile-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+.mobile-actions .btn {
+  flex: 1;
 }
 
 /* ---------- Hero ---------- */
@@ -787,13 +883,29 @@ form .btn {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .nav-links {
     display: none;
   }
-  .nav-right .btn-text {
+  .nav-right {
     display: none;
   }
+  .menu-toggle {
+    display: inline-flex;
+    position: relative;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .brand {
+    flex: 0 0 auto;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
   .cards-3,
   .cards-4 {
     grid-template-columns: 1fr;

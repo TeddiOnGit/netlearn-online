@@ -3,8 +3,16 @@
 import { useEffect, useState } from "react";
 import LogoMark from "./LogoMark";
 
+const LINKS = [
+  { href: "#about", label: "About" },
+  { href: "#programs", label: "Programs" },
+  { href: "#impact", label: "Impact" },
+  { href: "#contact", label: "Contact" },
+];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -14,25 +22,65 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`header${scrolled ? " scrolled" : ""}`}>
+    <header className={`header${scrolled || open ? " scrolled" : ""}`}>
       <div className="nav">
-        <a href="#top" className="brand">
+        <a href="#top" className="brand" onClick={() => setOpen(false)}>
           <LogoMark className="mark" />
           <span className="name">
             Net<b className="text-grad">learn</b>
           </span>
         </a>
+
         <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#impact">Impact</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {LINKS.map((l) => (
+            <li key={l.href}>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))}
         </ul>
+
         <div className="nav-right">
           <a href="#donate" className="btn btn-outline btn-text">
             Donate
           </a>
           <a href="#contact" className="btn btn-primary">
+            Get Involved
+          </a>
+        </div>
+
+        <button
+          className="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span className={`burger${open ? " is-open" : ""}`} />
+        </button>
+      </div>
+
+      <div className={`mobile-menu${open ? " open" : ""}`}>
+        <ul>
+          {LINKS.map((l) => (
+            <li key={l.href}>
+              <a href={l.href} onClick={() => setOpen(false)}>
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="mobile-actions">
+          <a
+            href="#donate"
+            className="btn btn-outline"
+            onClick={() => setOpen(false)}
+          >
+            Donate
+          </a>
+          <a
+            href="#contact"
+            className="btn btn-primary"
+            onClick={() => setOpen(false)}
+          >
             Get Involved
           </a>
         </div>
