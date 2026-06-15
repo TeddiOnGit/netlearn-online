@@ -562,6 +562,15 @@ section {
   color: #fff;
   box-shadow: 0 10px 22px -10px rgba(42, 157, 200, 0.7);
 }
+.ic-svg {
+  width: 56%;
+  height: 56%;
+  display: block;
+}
+.float .ic .ic-svg {
+  width: 22px;
+  height: 22px;
+}
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 9px;

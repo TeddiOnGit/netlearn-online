@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import LogoMark from "@/components/LogoMark";
+import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
@@ -56,7 +57,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="float float-2">
-                <span className="ic">🎓</span>
+                <span className="ic">
+                  <Icon name="cap" className="ic-svg" />
+                </span>
                 <div>
                   12,400+ learners
                   <small>and counting</small>
@@ -85,7 +88,7 @@ export default function Home() {
                 <img src="/images/resources.jpg" alt="A learner studying with notebooks and study tools" />
               </div>
               <div className="card-body">
-                <div className="ic">📚</div>
+                <div className="ic"><Icon name="book" className="ic-svg" /></div>
                 <h3>Learning Resources</h3>
                 <p>
                   Free study guides, e-learning content and exam preparation
@@ -99,7 +102,7 @@ export default function Home() {
                 <img src="/images/mentorship.jpg" alt="Two students learning together at a desk" />
               </div>
               <div className="card-body">
-                <div className="ic">🤝</div>
+                <div className="ic"><Icon name="mentor" className="ic-svg" /></div>
                 <h3>Mentorship Network</h3>
                 <p>
                   Connecting students with mentors and tutors who provide
@@ -112,7 +115,7 @@ export default function Home() {
                 <img src="/images/digital.jpg" alt="Learners using a digital device in class" />
               </div>
               <div className="card-body">
-                <div className="ic">💻</div>
+                <div className="ic"><Icon name="device" className="ic-svg" /></div>
                 <h3>Digital Access</h3>
                 <p>
                   Bridging the digital divide by equipping learning centres with
@@ -246,17 +249,17 @@ export default function Home() {
           </div>
           <div className="contact-cards">
             <div className="contact-card">
-              <span className="ic">✉</span>
+              <span className="ic"><Icon name="mail" className="ic-svg" /></span>
               <h4>Email</h4>
               <p>hello@netlearn.online</p>
             </div>
             <div className="contact-card">
-              <span className="ic">☎</span>
+              <span className="ic"><Icon name="phone" className="ic-svg" /></span>
               <h4>Phone</h4>
               <p>+27 81 771 8643</p>
             </div>
             <div className="contact-card">
-              <span className="ic">📍</span>
+              <span className="ic"><Icon name="pin" className="ic-svg" /></span>
               <h4>Location</h4>
               <p>South Africa</p>
             </div>
