@@ -25,27 +25,13 @@ export default function Home() {
               learning resources, mentorship and digital access to the learners
               who need it most — building a foundation for lifelong opportunity.
             </p>
-            <div className="hero-stats">
-              <div>
-                <div className="num text-grad">12,400+</div>
-                <div className="lbl">Learners reached</div>
-              </div>
-              <div>
-                <div className="num text-grad">86</div>
-                <div className="lbl">Partner schools</div>
-              </div>
-              <div>
-                <div className="num text-grad">97%</div>
-                <div className="lbl">Funds to programs</div>
-              </div>
-            </div>
           </div>
 
           <div className="hero-visual">
             <div className="hero-photo">
               <img
-                src="/images/hero.jpg"
-                alt="Students learning together in a classroom"
+                src="/images/resources.jpg"
+                alt="A learner studying with notebooks and study tools"
               />
               <div className="float float-1">
                 <span className="ic">
@@ -54,15 +40,6 @@ export default function Home() {
                 <div>
                   Verified NPO
                   <small>302-957</small>
-                </div>
-              </div>
-              <div className="float float-2">
-                <span className="ic">
-                  <Icon name="cap" className="ic-svg" />
-                </span>
-                <div>
-                  12,400+ learners
-                  <small>and counting</small>
                 </div>
               </div>
             </div>
@@ -85,7 +62,7 @@ export default function Home() {
           <div className="cards-3">
             <article className="card">
               <div className="card-photo">
-                <img src="/images/resources.jpg" alt="A learner studying with notebooks and study tools" />
+                <img src="/images/learning%20resources.jpg" alt="A learner studying with notebooks and study tools" />
               </div>
               <div className="card-body">
                 <div className="ic"><Icon name="book" className="ic-svg" /></div>
@@ -184,34 +161,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------- Impact ---------------- */}
-      <section className="impact" id="impact">
-        <div className="container">
-          <div className="head">
-            <span className="tag">Our impact</span>
-            <h2>Measurable change, year after year</h2>
-          </div>
-          <div className="impact-band">
-            <div>
-              <div className="num">12,400+</div>
-              <div className="lbl">Learners supported</div>
-            </div>
-            <div>
-              <div className="num">86</div>
-              <div className="lbl">Partner schools</div>
-            </div>
-            <div>
-              <div className="num">340</div>
-              <div className="lbl">Active volunteers</div>
-            </div>
-            <div>
-              <div className="num">97%</div>
-              <div className="lbl">Donations to programs</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ---------------- Mission (split) ---------------- */}
       <section className="mission" id="mission">
         <div className="container split">
@@ -230,7 +179,7 @@ export default function Home() {
             <ul className="ticks">
               <li>Resources that reach under-served communities</li>
               <li>Mentors who stay through the whole journey</li>
-              <li>Transparent stewardship — 97% straight to programmes</li>
+              <li>Transparent stewardship — funds go straight to programmes</li>
             </ul>
           </div>
         </div>
@@ -289,7 +238,6 @@ export default function Home() {
               <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#programs">Programs</a></li>
-                <li><a href="#impact">Our Impact</a></li>
                 <li><a href="#mission">Mission</a></li>
               </ul>
             </div>

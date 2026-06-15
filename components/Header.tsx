@@ -6,7 +6,6 @@ import LogoMark from "./LogoMark";
 const LINKS = [
   { href: "#about", label: "About" },
   { href: "#programs", label: "Programs" },
-  { href: "#impact", label: "Impact" },
   { href: "#mission", label: "Mission" },
   { href: "#contact", label: "Contact" },
 ];

@@ -938,9 +938,13 @@ section {
   .impact-band {
     grid-template-columns: 1fr 1fr;
   }
-  .hero-stats {
-    flex-direction: column;
-    gap: 18px;
+  .eyebrow {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.8px;
+    padding: 8px 14px;
   }
   .hero-photo > img {
     height: 340px;
