@@ -17,13 +17,15 @@ export default function Home() {
               <span className="pulse" /> Registered Non-Profit · NPO 302-957
             </span>
             <h1>
-              Empowering tomorrow,{" "}
-              <span className="text-grad">today</span>
+              From classroom to{" "}
+              <span className="text-grad">career</span>
             </h1>
             <p className="lead">
-              Netlearn partners with schools, communities and donors to deliver
-              learning resources, mentorship and digital access to the learners
-              who need it most — building a foundation for lifelong opportunity.
+              Netlearn partners with schools, communities and donors to help
+              learners build the skills, confidence and connections they need for
+              meaningful careers. We go beyond the syllabus with mentorship,
+              workshops and digital access that prepare young people for what
+              comes next.
             </p>
           </div>
 
@@ -52,11 +54,12 @@ export default function Home() {
         <div className="container">
           <div className="head">
             <span className="tag">Who we are</span>
-            <h2>Education support, designed for real impact</h2>
+            <h2>Education that opens doors to real careers</h2>
             <p>
               Netlearn is a registered non-profit organisation committed to
-              closing the education gap — giving learners, teachers and families
-              the tools and support they need to thrive.
+              helping learners see a clear path from school to work. We combine
+              academic support with career guidance so students can plan,
+              prepare and pursue opportunities with confidence.
             </p>
           </div>
           <div className="cards-3">
@@ -69,8 +72,8 @@ export default function Home() {
                 <h3>Learning Resources</h3>
                 <p>
                   Free study guides, e-learning content and exam preparation
-                  materials, accessible to every learner regardless of
-                  background.
+                  materials that build the academic foundation learners need to
+                  qualify for further study and early career opportunities.
                 </p>
               </div>
             </article>
@@ -82,8 +85,9 @@ export default function Home() {
                 <div className="ic"><Icon name="mentor" className="ic-svg" /></div>
                 <h3>Mentorship Network</h3>
                 <p>
-                  Connecting students with mentors and tutors who provide
-                  guidance, encouragement and academic support all year round.
+                  Connecting students with mentors who share career insight,
+                  academic guidance and encouragement, helping learners explore
+                  paths and make informed choices about their future.
                 </p>
               </div>
             </article>
@@ -95,8 +99,9 @@ export default function Home() {
                 <div className="ic"><Icon name="device" className="ic-svg" /></div>
                 <h3>Digital Access</h3>
                 <p>
-                  Bridging the digital divide by equipping learning centres with
-                  devices, connectivity and digital-literacy training.
+                  Bridging the digital divide with devices, connectivity and
+                  training in the digital skills that today&apos;s workplaces
+                  and career paths increasingly expect.
                 </p>
               </div>
             </article>
@@ -111,10 +116,11 @@ export default function Home() {
             <span className="tag" style={{ color: "var(--cyan)" }}>
               What we do
             </span>
-            <h2>Programs built around the learner</h2>
+            <h2>Programs that prepare learners for what comes next</h2>
             <p>
-              Every initiative is designed with educators and communities so
-              support is relevant, sustainable and measurable.
+              Every initiative connects classroom learning to career outcomes,
+              shaped with educators and communities so support stays relevant,
+              practical and measurable.
             </p>
           </div>
           <div className="cards-3">
@@ -127,7 +133,8 @@ export default function Home() {
                 <h3>Exam Preparation</h3>
                 <p>
                   Focused revision, past-paper practice and study strategies
-                  that help learners walk into exams ready and confident.
+                  that help learners achieve the results they need to access
+                  tertiary study, apprenticeships and career pathways.
                 </p>
               </div>
             </article>
@@ -139,8 +146,9 @@ export default function Home() {
                 <div className="num">02</div>
                 <h3>Weekly Classes</h3>
                 <p>
-                  Regular, structured sessions in core subjects that build
-                  understanding steadily and keep learners on track all term.
+                  Extra lessons in core subjects through regular, structured
+                  sessions that build understanding steadily and keep learners
+                  on track for the qualifications their careers will depend on.
                 </p>
               </div>
             </article>
@@ -152,8 +160,10 @@ export default function Home() {
                 <div className="num">03</div>
                 <h3>Development Workshops</h3>
                 <p>
-                  Hands-on workshops growing digital, study and life skills that
-                  prepare learners for opportunities beyond the classroom.
+                  Hands-on workshops covering career planning, CV writing,
+                  interview skills and workplace readiness, alongside digital
+                  and life skills that prepare learners for opportunities
+                  beyond the classroom.
                 </p>
               </div>
             </article>
@@ -169,17 +179,18 @@ export default function Home() {
           </div>
           <div className="split-text">
             <span className="tag">Our mission</span>
-            <h2>Every learner deserves the chance to thrive</h2>
+            <h2>Every learner deserves a path to a meaningful career</h2>
             <p>
               As a registered non-profit organisation, Netlearn exists to make
-              quality education accessible to all. We invest directly into
-              programmes, resources and mentorship — meeting learners where they
-              are and walking with them toward their potential.
+              career-focused education accessible to all. We invest directly
+              into programmes, resources and mentorship, meeting learners where
+              they are and walking with them from school toward work they can
+              be proud of.
             </p>
             <ul className="ticks">
-              <li>Resources that reach under-served communities</li>
-              <li>Mentors who stay through the whole journey</li>
-              <li>Transparent stewardship — funds go straight to programmes</li>
+              <li>Career guidance that reaches under-served communities</li>
+              <li>Mentors who stay with learners through the whole journey</li>
+              <li>Transparent stewardship, with funds going straight to programmes</li>
             </ul>
           </div>
         </div>
@@ -192,15 +203,16 @@ export default function Home() {
             <span className="tag">Get in touch</span>
             <h2>We&apos;d love to hear from you</h2>
             <p>
-              Whether you&apos;re a school, donor, volunteer or learner — reach
-              out and let&apos;s expand access to education together.
+              Whether you&apos;re a school, donor, volunteer or learner, reach
+              out and let&apos;s help more young people build the careers they
+              deserve.
             </p>
           </div>
           <div className="contact-cards">
             <div className="contact-card">
               <span className="ic"><Icon name="mail" className="ic-svg" /></span>
               <h4>Email</h4>
-              <p>hello@netlearn.online</p>
+              <p>wearenetlearn@gmail.com</p>
             </div>
             <div className="contact-card">
               <span className="ic"><Icon name="phone" className="ic-svg" /></span>
@@ -228,9 +240,9 @@ export default function Home() {
                 </span>
               </a>
               <p>
-                A registered non-profit organisation dedicated to expanding
-                access to quality education and learning support across
-                communities.
+                A registered non-profit organisation dedicated to career
+                development for young learners, through education, mentorship
+                and community partnerships across South Africa.
               </p>
             </div>
             <div>
@@ -244,7 +256,7 @@ export default function Home() {
             <div>
               <h4>Contact</h4>
               <ul>
-                <li>hello@netlearn.online</li>
+                <li>wearenetlearn@gmail.com</li>
                 <li>+27 81 771 8643</li>
                 <li>South Africa</li>
               </ul>

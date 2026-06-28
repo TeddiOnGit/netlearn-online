@@ -17,9 +17,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Netlearn | Empowering Tomorrow, Today",
+  title: "Netlearn | Building Careers Through Education",
   description:
-    "Netlearn is a registered non-profit organisation (NPO 302-957) expanding access to quality education through resources, mentorship and digital access.",
+    "Netlearn is a registered non-profit organisation (NPO 302-957) helping learners build career-ready skills through mentorship, workshops and digital access.",
   icons: { icon: "/netlearn-logo.svg" },
 };
 
